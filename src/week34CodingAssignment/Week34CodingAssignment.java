@@ -25,7 +25,7 @@ public class Week34CodingAssignment {
 		
 		//b. Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
 		
-		int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 93, 48};
+		int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 93, 46};
 		System.out.println(ages2[ages2.length - 1] - ages2[0]);
 		
 		//c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.
@@ -33,7 +33,8 @@ public class Week34CodingAssignment {
 		for (int i = 0 ; i < ages2.length; i++) {
 			total += ages2[i];
 		}
-		System.out.println(total/ages.length);
+		System.out.println(total/ages2.length);
+		
 		//2. Create an array of String called names that contains the following values: “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”. 
 		
 		String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
@@ -76,7 +77,7 @@ public class Week34CodingAssignment {
 		
 		//7. Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in “Hello” and 3, I expect the method to return “HelloHelloHello”). 
 		
-		String Beetlejuice = multiplyString("Beetlejuice", 3);
+		String Beetlejuice = multiplyString("Beetlejuice ", 3);
 		System.out.println(Beetlejuice);
 		
 		//8. Write a method that takes two Strings, firstName and lastName, and returns a full name (the full name should be the first and the last name as a String separated by a space). 
@@ -108,10 +109,12 @@ public class Week34CodingAssignment {
 		System.out.println(willBuyDrink(isHotOutside, moneyInPocket));
 		
 		//13. Create a method of your own that solves a problem. In comments, write what the method does and why you created it. 
+		//This is reference to an old joke with a video game called "Portal". The method I created evaluates two booleans of true/false statements.
+		//If BOTH statements are TRUE it returns a string with real cake. If EITHER statements are FALSE it returns a string the cake is a lie.
 		
 		boolean thereIsCake = false;
 		boolean iWasToldThereWasCake = true;
-		System.out.println(theCakeIsALie (thereIsCake, iWasToldThereWasCake));
+		System.out.println(theCakeIsALie(thereIsCake, iWasToldThereWasCake));
 		
 	} // end of main
 
